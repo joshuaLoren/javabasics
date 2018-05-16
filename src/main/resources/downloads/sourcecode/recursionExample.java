@@ -27,7 +27,7 @@
    /**
     *  Recusive Method for detecting number of nodes in a list
    */ 
-   /*public int numberOfNodes(MyLinkedList l)
+   public int numberOfNodes(MyLinkedList l)
    {
       //store number of nodes
       int result = 0;
@@ -43,6 +43,6 @@
          result++;
          return numberOfNodes(l.link);
       }
-   }*/
+   }
  
  }

@@ -10,24 +10,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" th:href="@{/app.css}" />
 
-    <title>queues</title>
+    <title>Queues</title>
 </head>
 <body>
 <div class="navbar-fixed">
     <nav>
-        <div class="container">
-            <a th:href="@{/}" class="brand-logo">Queues</a>
-            <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a th:href="@{/}">Explore</a></li>
-                <li class="active"><a th:href="@{/categories}">Categories</a></li>
-                <li><a th:href="@{/favorites}">Favorites</a></li>
-            </ul>
-            <ul id="mobile-nav" class="side-nav">
-                <li><a th:href="@{/}">Explore</a></li>
-                <li class="active"><a th:href="@{/categories}">Categories</a></li>
-                <li><a th:href="@{/favorites}">Favorites</a></li>
-            </ul>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="container">
+                    <a th:href="@{/}" class="brand-logo">Queues</a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a th:href="@{/}">Home</a></li>
+                        <!--<li class="active"><a th:href="@{/}">About (Coming soon)</a></li>-->
+
+                    </ul>
+                    <ul id="mobile-nav" class="side-nav">
+                        <li class="active"><a th:href="@{/}">Home</a></li>
+                        <!--<li class="active"><a th:href="@{/}">About (Coming soon)</a></li>-->
+
+                    </ul>
+                </div>
+            </nav>
         </div>
     </nav>
 </div>
@@ -36,7 +40,7 @@
         <div class="col s12">
             <form action="#" method="get">
                 <div class="input-field">
-                    <input name="q" type="search" placeholder="`Search java basics..." required="required" autocomplete="off"/>
+                    <input name="q" type="search" placeholder="`Search java basics...(coming soon)." required="required" autocomplete="off"/>
                     <i class="material-icons">search</i>
                 </div>
             </form>
@@ -68,10 +72,20 @@
                 </div>
             </div>
         </div>
+        <h4>Queue Demo</h4>
+        <h6>Author: Joshua Small</h6>
+        <!--<img th:src="@{'/icons/collections.png'}" alt="gif" class="responsive" />-->
+        <script src="https://gist.github.com/joshuaLoren/1486b94b66ecdf85c36ae9cc38d40d68.js"></script>
+        <h4><a th:href="@{http://localhost:8080/downloads/sourcecode/queuedemo.java}">Click to download the source code</a></h4>
     </div>
 
-    <h3><a th:href="@{http://localhost:8080/downloads/sourcecode/queuedemo.java}">Click to download the source code</a></h3>
+
+
 </div>
+
+
+
+
 
 <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
 <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
