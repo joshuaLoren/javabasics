@@ -26,7 +26,8 @@ public class FileDownloadController
         /**
          *  Get stackfile
          */
-        Path stackfile = Paths.get("C:\\Users\\Joshua\\Desktop\\webprojects\\javabasics\\src\\main\\resources\\downloads\\sourcecode\\genericstack.java");
+        //Path stackfile = Paths.get("C:\\Users\\Joshua\\Desktop\\webprojects\\javabasics\\src\\main\\resources\\downloads\\sourcecode\\genericstack.java");
+        Path stackfile = Paths.get("javabasics\\src\\main\\resources\\downloads\\sourcecode\\genericstack.java");
         System.out.println("And here " + stackfile);
         if (Files.exists(stackfile))
         {
